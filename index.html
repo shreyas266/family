@@ -1,0 +1,42 @@
+<html>
+  <head> 
+  <title> My fam</title>
+  </head>
+  <body> 
+    <p id="firstp"> My fam</p>
+    <p> Here is my family</p>
+    <img id="album" src="https://www.pngkey.com/png/detail/436-4361967_dad-stands-daddy-clip-art.png">
+    <div> <button onclick="nextslide()" type="button"> Next</button></div>
+    <p id="reason">1. dad </p> 
+    <script>var reasons=["mom","me"," brother"];
+var images=["https://lh3.googleusercontent.com/proxy/4Tk5Qht5oStzbpgHzGFt8M_YtOp7v2a3X3gB8GZHrV6TaKeOz84qPkgyRhIHbs7o48kF3If8JGzFl-xi2TWXndnbOH4FbT9LCQ","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdDOpGCNsWF8LYqljwTMuNQhixDaxeOj7kxg&usqp=CAU","https://previews.123rf.com/images/katrinahappy/katrinahappy1107/katrinahappy110700016/9995638-vector-illustration-little-boy-with-ball-and-toy-car.jpg"];
+var i=0;
+function nextslide(){
+  if(i<=3){
+    document.getElementById("reason").innerHTML=reasons[i];
+    document.getElementById("album").src=images[i];
+    i++;
+    
+  }
+}</script>
+<style>body{
+    text-align:center;
+    background-color:lime;
+  }
+  #firstp{
+    word-spacing:10px;
+    font-variant:small-caps;
+    font-size:80px;
+  }
+  #reason{
+    font-size:50px;
+  }
+  #album{
+    border-style:solid;
+    border-color:midnightblue;
+    border:1px;
+    padding:5px;
+    width:450px;
+  }</style>
+  </body>
+</html>
